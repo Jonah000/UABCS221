@@ -20,6 +20,9 @@ a:link {
   color: lightseagreen; /*Sets the link text color to light sea green when not visited*/
   background-color: darkgray; /*Makes the background color darkgray*/
 }
+a:visited {
+  color: green; /*Makes lnks that have already been used change to green text*/
+}
 a:hover {
   color: black; /*Makes the text color black when hovered over*/
 }
