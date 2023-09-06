@@ -1,3 +1,9 @@
+
+body {
+  font-family: Arial;
+  background-color: #fcebb6;
+  color: 221881;
+}
 p {
   color: green;
 }
@@ -8,22 +14,29 @@ div {
   color: brown;
 }
 footer {
-  color: blue;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+  background-color: #d2b48c;
 }
 table {
   color: pink;
 }
 h1 {
-  color: violet;
+  color: #8c3826;
+  background-color: #d2b48c;
 }
 nav {
-  background-color: black;
+  font-weight: 1000;
+  text-align: center;
 }
 h2 {
-  color: yellow;
+  color: #8c3826;
+  background-color: #d2b48c;
 }
 h3 {
-  color: cyan;
+  color: #8c3826;
+  background-color: #d2b48c;
 }
 dd {
   color: fuchsia;

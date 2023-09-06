@@ -1,0 +1,28 @@
+h1 {
+  text-align: center; /*This puts every h1 in the center on the page*/
+  background-color: darkgreen; /*This makes the background color of every h1 darkgreen*/
+  color: white; /*This makes the text color of every h1 white*/
+}
+nav {
+  text-align: center; /*This puts the navigation panel in the center of the page*/
+}
+p {
+  font-family: Verdana; /*Every p will be in Verdana*/
+  color: green; /*Every p will have green text*/
+  margin: 3em; /*Every p will have a margin of 3em*/
+}
+footer {
+  font-size: 0.6em; /*The footer size is set to .6em, making it much smaller than the rest of the page*/
+  font-style: italic; /*The footer is set to italics*/
+}
+a:link {
+  text-decoration-line: none; /*Gets rid of the underline on links*/
+  color: lightseagreen; /*Sets the link text color to light sea green when not visited*/
+  background-color: darkgray; /*Makes the background color darkgray*/
+}
+a:hover {
+  color: black; /*Makes the text color black when hovered over*/
+}
+a:active {
+  color: green; /*Makes the text color green when it is being clicked*/
+}
