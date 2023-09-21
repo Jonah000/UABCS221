@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  background-color: darkgreen;
+  color: white;
+}
+nav {
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+p {
+  font-family: Verdana;
+  color: green;
+  margin: 3em;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: green;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  font-size: 0.6em;
+  font-style: italic;
+}
+a:link {
+  text-align: center;
+  text-decoration-line: none;
+  color: lightseagreen;
+  background-color: darkgray;
+}
+a:visited {
+  text-align: center;
+  color: green;
+}
+a:hover {
+  text-align: center;
+  color: black;
+}
+a:active {
+  text-align: center;
+  color: green;
+}
