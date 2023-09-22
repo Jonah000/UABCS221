@@ -1,0 +1,72 @@
+:root {
+  --clr-dark: black;
+  --clr-light: white;
+  --clr-accent: red;
+  --clr-red: orange;
+  --clr-green: limegreen;
+  --clr-sky: skyblue;
+  --clr-pink: pink;
+  --clr-orange: tan;
+  --clr-yellow: yellow;
+  --clr-purple: lavender;
+}
+body {
+  background-color: green;
+}
+.flex-container {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  gap: 1em;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: var(--clr-light);
+  text-shadow: 1px 1px 1px #6b6b6b;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.item-1 {
+  background-color: var(--clr-pink);
+}
+
+.item-2 {
+  background-color: var(--clr-green);
+}
+
+.item-3 {
+  background-color: var(--clr-yellow);
+}
+
+.item-4 {
+  background-color: var(--clr-sky);
+}
+
+.item-5 {
+  background-color: var(--clr-purple);
+}
+
+.item-6 {
+  background-color: var(--clr-orange);
+}
+.item-7 {
+  background-color: var(--clr-accent);
+}
+.item-8 {
+  background-color: var(--clr-dark);
+}
+.item-9 {
+  background-color: var(--clr-red);
+}

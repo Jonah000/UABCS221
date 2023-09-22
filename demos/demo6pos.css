@@ -1,0 +1,55 @@
+ /* this will adjust/override properties of the existing code */
+
+ /* MEDIA QUERIES */
+ /* if under 600px, switch to two columns */
+/*  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } */
+ /* if under 300, switch to one column */
+/*  @media (max-width: 300px) {
+    .grid-container {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }*/
+/*     .grid-item{
+        width: 100px;
+        height:100px;
+    } 
+  }
+ */
+/* Alternatively, adjust the grid auto options */
+/* Resizing & Positioning Demo */
+.grid-container {
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px)); 
+    width: 80%; 
+   /*  grid-auto-flow: dense;  *//* fills empty space */
+}
+
+/* spans 2 at current location */
+/*overriding default size to fit new span */
+/* .item-1{
+    grid-column: span 2; 
+    width: 100%; 
+}
+ */
+
+/* column starts from line 3 and ends at line 5 */
+/* row starts from line 1 and ends at line 3 */
+/* .item-4 {
+    width: 100%; 
+    height: 100%; 
+    grid-column: 3 / 5;  
+    grid-row: 1 / 3;     
+} */
+
+/*overriding default size to fit new span */
+/* starts from line 1 and ends at line 3 */
+/* .item-6 {
+    grid-column: 1 / 3; 
+    width: 100%;
+} */

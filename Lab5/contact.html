@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <div class="flex-container">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Jonah Higgins</title>
-    <h1>Jonah Higgins</h1>
-    <p></p>
-    <nav><a href="index.html">Home</a> <a href="about.html">About me</a></nav>
-    <p></p>
+    <div><h1>Jonah Higgins</h1></div>
+    <div><nav><a href="index.html">Home</a> <a href="about.html">About me</a></nav></div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1>Contact me here:</h1>
-    <p><a href="jonahhiggins6@gmail.com"> jonahhiggins6@gmail.com</a></p>
-    <p></p>
-    <p>
-      I do not have other social media, but if I get any, this will be updated
-    </p>
-    <p></p>
-
-    <footer>This is a footer</footer>
+  <div><h1>Contact me here:</h1></div>
+  <div><form
+      action="https://formsubmit.co/jonahhiggins6@gmail.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      Name:<br />
+      <input type="text" name="subject" placeholder="Your Name" /><br />
+      Email:<br />
+      <input type="email" name="email" placeholder="Your Email" /><br />
+      Message:<br />
+      <textarea
+        name="body"
+        rows="5"
+        cols="30"
+        placeholder="Your Message"
+      ></textarea
+      ><br />
+      <input type="submit" value="Send" />
+    </form></div>
+    <div><footer>This is a footer</footer></div>
   </body>
 </html>
