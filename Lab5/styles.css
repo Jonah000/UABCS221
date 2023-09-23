@@ -71,7 +71,7 @@ textarea {
   flex-direction: column;
 }
 .image {
-  background-image: url('background.jpeg');
+  background-image: url('img/background.jpeg');
   background-repeat: no-repeat;
   width: 1200px;
   height: 720px;
