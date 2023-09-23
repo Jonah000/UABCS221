@@ -1,0 +1,255 @@
+/* Reset some default browser styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Setting Lato as the default font */
+body {
+  font-family: 'Lato', sans-serif;
+  background: #f1f1f1;
+}
+
+/* Setting Anton as the headings/display font */
+h1, h2, h3, h4, h5, h6, .hero-title {
+  font-family: 'Dosis', sans-serif;
+}
+/* Make a sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #edf6f9;
+  z-index: 100;
+}
+
+/* Center the content to 70% of the header */
+.header-content {
+  max-width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for the logo */
+.logo span {
+  font-size: 20px;
+}
+  
+/* Navigation styles */
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #003049;
+  font-size: 16px;
+  position: relative;
+  transition: font-size 0.3s ease, border-bottom 0.3s ease;
+  text-align: center;  /* This will help to keep the text centered within the grid cell */
+}
+
+.nav-link:hover {
+  font-size: 20px;
+}
+
+/* Add a line at the bottom of the link when hovered */
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  width: 80%;
+  height: 5px;
+  background-color: #f77f00;
+}
+
+
+/* Hero Section */
+.hero {
+  width: 100vw;
+  height: 300px; 
+  /* Use Unsplash for great hi-res images that work well for hero-images. */
+  background-image: url('https://images.unsplash.com/photo-1595864706735-b8af61a279f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+}
+
+/* The overlay that will be clear on hover */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* This adds a slight dark overlay. You can adjust as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  transition: backdrop-filter 1s ease;
+}
+
+.hero:hover .hero-overlay {
+  backdrop-filter: blur(0px);
+}
+
+/* Optionally can use Flexbox here */
+.hero-title {
+  font-size: 48px; /* adjust based on your preference */
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%; 
+  left: 25%; /* Adjust to move it slightly off-center to the left */
+  transform: translateY(-50%); /* Vertically center the text */
+  z-index: 2; /* Ensures the text stays on top of the overlay */
+}
+
+
+
+/* Main Content */
+.content-wrapper {
+  max-width: 80%;
+  margin: 40px auto; /* Adding some top and bottom margin for spacing */
+}
+
+.content-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* space between the two columns */
+}
+.column {
+  display: flex;
+
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Adds some space between the header and the card content */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #edf6f9;
+}
+
+/* Unordered List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  position: relative;
+  font-weight: 400;
+}
+
+/* A pseudo element before each list item */
+ul li::before {
+  content: '»';
+  color: #f77f00;
+  margin-right: 10px;
+}
+
+/* General styling for inputs and textarea */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa; 
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+  background-color: #edf6f9;
+  border-bottom: 2px solid #f77f00;
+}
+
+.contact-form textarea {
+  height: 150px; /* Adjust based on preference */
+  resize: vertical; /* Allows only vertical resizing */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+/* Styling the submit button */
+.contact-form button {
+  width: 100px; 
+  height: 50px;
+  background-color: #f77f00; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e56600;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;         
+  left: 0;
+  width: 100%;        
+  background-color: #f77f00;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+}

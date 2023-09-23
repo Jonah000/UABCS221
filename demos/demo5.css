@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+
+/* The following ruleset is for all elements */
+/* This is a good way to set a baseline for all objects */
+* {
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+}
+
+body {
+    background-color: #adadad;
+    color: #111; /* set color of text to a very dark gray, almost black.*/
+}
+
+h1 {
+    color: rgb(98, 45, 5);
+    font-family: 'Titan One', Verdana, Geneva, Tahoma, sans-serif;
+    /* text-align: center; */
+    
+}
+
+/* div {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+  } */
+
+li {
+/*     display: inline;
+    padding-right: 5px; */
+}
+
+a {
+/*     text-decoration: none; */
+}
+
+footer {
+    text-align: center;
+}
+
+/* .wrapper {
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+} */
+
+/* #parent {
+    width: 200px;
+    height: 200px;
+    background-color: #ffc7e4;
+    position: relative;
+  }
+
+  #width, #noWidth {
+    background-color: #c2ffd7;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  #width {
+    width: 100px;
+    top: 60px;
+  } */
+  

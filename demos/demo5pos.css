@@ -1,0 +1,34 @@
+ /* set positioning to show relatively of child objects (ex: absolute) */
+/* .container {
+    position: relative;
+}
+ */
+ /* item-1 should be absolute */
+
+.item-1{
+}
+
+ /* item-1 should be static */
+.item-2{
+    position: static;
+}
+/* static positioned items do not have a top, left, right, bottom */
+
+/* item 3 should be relative */
+.item-3{
+
+}
+/* item 4 should be sticky */
+/* sticky is relative to its container! */
+.item-4 {
+}
+
+/* item 5 should be fixed */
+.item-5 {
+
+}
+
+/* if overflow, disable horizontal scrollbar */
+/* body{
+    overflow-x: hidden;
+} */
