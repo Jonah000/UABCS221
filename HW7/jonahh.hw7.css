@@ -7,18 +7,6 @@
     position: sticky;
     top: 0;
   }
-  :root {
-    --clr-dark: #0e0f0f;
-    --clr-light: #f1f5f9;
-    --clr-accent: #e11d48;
-    --clr-red: #d62828;
-    --clr-green: #00F5D4;
-    --clr-sky: #00BBF9;
-    --clr-pink: #F15BB5;
-    --clr-orange: #f4a261;
-    --clr-yellow: #FEE440;
-    --clr-purple: #9B5DE5;
-    }
 section {
     height: 150vh;
     display: flex;
@@ -38,7 +26,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: var(--clr-light);
+    color: white;
     text-shadow: 1px 1px 1px #6b6b6b;
     font-weight: 700;
     font-size: 2rem;
@@ -50,7 +38,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    color: var(--clr-light);
+    color: white;
     text-shadow: 1px 1px 1px #6b6b6b;
     font-weight: 700;
     font-size: 2rem;
