@@ -1,0 +1,138 @@
+/* setting default values for padding, margin, and box sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/* color variables */
+:root {
+--clr-dark: #0e0f0f;
+--clr-light: fff;
+}  
+/* sets body background */
+body {
+  background: var(--clr-dark);
+}
+
+h2 {
+  color: var(--clr-light);
+}
+
+section {
+  
+  height: 100vh; /* set section height to full viewscreen */
+  display: flex; /* sets self as flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+/* flex item */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px)); 
+  grid-template-rows: repeat(3, 300px);
+  gap: 1em;
+  width: 80%;
+}
+
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  display: flex; /* tiny flexbox to center text */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #6b6b6b;
+  font-weight: 700;
+  font-size: 3rem;
+
+}
+
+/* semi-transparent gradient + image. Try changing alpha level to 1 to see which background layer order */
+.item-1 {
+  background-image:linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+  url("https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+/* Simple Linear Gradient */
+.item-2 {
+  background-image:linear-gradient(yellow, blue);
+}
+/* Simple Radial Gradient */
+.item-3 {
+  background-image:radial-gradient(blue, yellow);
+}
+/* Repeating Linear Gradient - every 50px, the gradient repeats. Try changing the size value to see different options. */
+.item-4 {
+  background-image:repeating-linear-gradient(yellow, blue 50px);
+}
+/* Conic Gradient - every 50px, the gradient repeats. Try changing the size value to see different options. */
+.item-5 {
+  background-image:conic-gradient(yellow, blue);
+}
+/* Color Hint - try changing the percentage to see where the transition occurs */
+.item-6 {
+  background-image:linear-gradient(yellow, 25%, blue); /*Color Hint*/
+}
+/* Background patterning. This involves two layers of radial gradients, with specific sizing to create a pattern */
+.item-7 {
+  background:
+        radial-gradient(purple 2px,
+           transparent 3px) 0 0,
+        radial-gradient(purple 2px,
+           transparent 3px) 20px 20px,
+        #fff;
+    background-size: 40px 40px;
+    color: black;
+    position:relative;
+}
+
+/* Hard Stop/Start create solid lines instead of gradients */
+.item-8{
+ background: linear-gradient(to right,red 15%, orange 15% 30%, yellow 30% 45%, yellowgreen 45% 60%, cyan 60% 75%, navy 75% 90%, #64009d 90% 100%);
+}
+
+/* Patterns using Liniear gradients */
+.item-9{
+  background: linear-gradient(135deg, #333 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #333 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #333 25%, transparent 25%),
+  linear-gradient(45deg, #333 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: orange;
+}
+/* Hover uses the Scale property to scale up the item 1.25x */
+.item-1:hover{
+  scale: 1.25;
+}
+/* Hover uses the Rotate property to rotate the item 90 degrees */
+.item-5:hover{
+  rotate: 90deg;
+  scale: 1.25;
+}
+/* Hover uses the Scale and Translate to scale up and move the item from its original position */
+.item-9:hover{
+  scale: 1.25;
+  translate: -50px -50px;
+}
+
+
+/* There's a lot going on here. Try to figure it out - it'll help with your homework. ;) */
+.item-7:hover::before{
+  content: "This is a hover gradient";
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-size: .5em;
+  width: 100%;
+  height:200px;
+  border-radius: 25px;
+  color: rgb(26, 26, 26);
+  text-shadow: none;
+}
