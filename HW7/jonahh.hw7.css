@@ -16,7 +16,7 @@
     --clr-purple: #9B5DE5;
     }
 section {
-    height: 300vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,31 +40,50 @@ section {
     font-size: 2rem;
   }
   .item-1 {
-    background-color: var(--clr-pink);
+    background-image: url(https://images.unsplash.com/photo-1695670277545-919ece6eddb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80);
+    background-size: cover;
+  }
+  .item-1:hover{
+    scale: 1.25;
   }
   
   .item-2 {
-    background-color: var(--clr-green);
+    background-image: url(https://images.unsplash.com/photo-1692387673695-5658f382257c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
   }
-  
+  .item-2:hover{
+    scale: 1.25;
+    rotate: 90;
+  }
   .item-3 {
-    background-color: var(--clr-yellow);
+    background-image: url(https://images.unsplash.com/photo-1695651941791-1c7d6ec80755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
   }
-  
+  .item-3:hover{
+    scale: 1.25;
+    rotate: 180;
+  }
   .item-4 {
-    background-color: var(--clr-sky);
+    background-image: url(https://images.unsplash.com/photo-1694536379581-3003331c1e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
   }
-  
+  .item-4:hover{
+    scale: 1.25;
+    rotate: 90;
+  }
   .item-5 {
-    background-color: var(--clr-purple);
+    background-image: url(https://images.unsplash.com/photo-1695278255455-9afc87008775?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
   }
-  
+  .item-5:hover{
+    scale: 1.25;
+    rotate: 90;
+  }
   .item-6 {
-    background-color: var(--clr-orange);
+    background-image: url(https://images.unsplash.com/photo-1695829078492-6c88a9d1aa36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
   }
-.styledimg {
-    background-image: url(/img/adrian-infernus-z2X2A53TgbU-unsplash.jpg);
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+  .item-6:hover{
+    scale: 1.25;
+    rotate: 90;
   }
