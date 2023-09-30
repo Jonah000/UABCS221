@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --clr-dark: #0e0f0f;
+    --clr-light: #f1f5f9;
+    --clr-accent: #e11d48;
+    --clr-red: #d62828;
+    --clr-green: #00F5D4;
+    --clr-sky: #00BBF9;
+    --clr-pink: #F15BB5;
+    --clr-orange: #f4a261;
+    --clr-yellow: #FEE440;
+    --clr-purple: #9B5DE5;
+    }
+section {
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 1em;
+  }
+  .grid-item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--clr-light);
+    text-shadow: 1px 1px 1px #6b6b6b;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .item-1 {
+    background-color: var(--clr-pink);
+  }
+  
+  .item-2 {
+    background-color: var(--clr-green);
+  }
+  
+  .item-3 {
+    background-color: var(--clr-yellow);
+  }
+  
+  .item-4 {
+    background-color: var(--clr-sky);
+  }
+  
+  .item-5 {
+    background-color: var(--clr-purple);
+  }
+  
+  .item-6 {
+    background-color: var(--clr-orange);
+  }
+.styledimg {
+    background-image: url(/img/adrian-infernus-z2X2A53TgbU-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+  }
