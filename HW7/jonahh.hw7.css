@@ -43,8 +43,17 @@ section {
     font-weight: 700;
     font-size: 2rem;
   }
-  .grid-item:nth-child{
+  .grid-item:nth-child(even){
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
+    color: var(--clr-light);
+    text-shadow: 1px 1px 1px #6b6b6b;
+    font-weight: 700;
+    font-size: 2rem;
   }
   .item-1 {
     background-image: url(https://images.unsplash.com/photo-1695670277545-919ece6eddb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80);
@@ -95,5 +104,5 @@ section {
     rotate: 360deg;
   }
   .item-6:hover::before{
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
+    background: linear-gradient(rgb(231, 4, 4), rgba(100, 13, 199, 0.5));
   }
