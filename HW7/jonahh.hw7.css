@@ -89,7 +89,7 @@ section {
   }
   .item-6:hover{
     scale: 1.25;
-    rotate: 360deg;
+    rotate: 230deg;
   }
   .item-6:hover::before{
     background: linear-gradient(rgb(231, 4, 4), rgba(100, 13, 199, 0.5));
