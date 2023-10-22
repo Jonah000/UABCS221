@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jonah Higgins</title>
+    <script>
+    let grade = prompt("Please enter a numeric grade: ", "100");
+    let numbergrade = parseInt(grade);
+    if(numbergrade >= 90) {
+        console.log("Grade: " + numbergrade);
+        console.log("Lettergrade: A");
+        console.log("Reward: Candy"); 
+    } else if(80 <= numbergrade <= 89) {
+        console.log("Grade: " + numbergrade);
+        console.log("Lettergrade: B");
+        console.log("Reward: Apple");
+    } else if(70 <= numbergrade <= 79) {
+       console.log("Grade: " + numbergrade);
+        console.log("Lettergrade: C");
+        console.log("Reward: Mint");
+    } else if(60 <= numbergrade <= 69) {
+        console.log("Grade: " + numbergrade);
+        console.log("Lettergrade: D");
+        console.log("Reward: Pencil");
+    } else {
+        console.log("Grade: " + numbergrade);
+        console.log("Lettergrade: F");
+        console.log("Reward: Awkward conversation with parents");
+    };
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
