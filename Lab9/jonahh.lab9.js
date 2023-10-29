@@ -1,12 +1,15 @@
 let choice = prompt("rock, paper, or scissors: ", "rock");
+if(choice != "rock", "paper", "scissors") {
+    choice = prompt("Try again: ");
+}
 console.log("User chose: " + choice);
-let com = Math.floor(Math.random() * 4);
+let com = Math.floor(Math.random() * 11);
 let comchoice;
-if(com == 3) {
+if(com == 10 || com == 9 || com == 8) {
     comchoice = "rock";
-} else if(com == 2) {
+} else if(com == 7 || com == 6 || com == 5) {
     comchoice = "paper";
-} else if(com == 1) {
+} else if(com == 4 || com == 3 || com == 2) {
     comchoice = "scissors";
 } else {
     comchoice = "gun";
@@ -30,4 +33,4 @@ if(choice == comchoice){
     winner = "Computer chose gun...shoot";
 }
 console.log("Computer chose: " + comchoice);
-console.log(winner);
+console.log("Results: " + winner);
