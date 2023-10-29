@@ -1,6 +1,12 @@
 let choice = prompt("rock, paper, or scissors: ", "rock");
-if(choice != "rock", "paper", "scissors") {
-    choice = prompt("Try again: ");
+if(choice == "rock") {
+    choice = "rock";
+} else if(choice == "paper") {
+    choice = "paper";
+} else if(choice == "scissors") {
+    choice = "scissors";
+} else {
+    choice = prompt("Not valid, try again: ");
 }
 console.log("User chose: " + choice);
 let com = Math.floor(Math.random() * 11);
