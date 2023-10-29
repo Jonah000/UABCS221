@@ -40,3 +40,9 @@ if(choice == comchoice){
 }
 console.log("Computer chose: " + comchoice);
 console.log("Results: " + winner);
+
+if(confirm("Play again?") == true) {
+    location.reload();
+} else {
+    console.log("Goodbye");
+}
