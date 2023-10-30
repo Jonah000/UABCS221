@@ -44,5 +44,6 @@ console.log("Results: " + winner);
 if(confirm("Play again?") == true) {
     location.reload();
 } else {
+    window.close();
     console.log("Goodbye");
 }
