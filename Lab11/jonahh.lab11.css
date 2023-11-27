@@ -1,0 +1,47 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1603058817990-2b9a9abbce86?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: fill;
+}
+h1 {
+    text-align: center;
+    color:white;
+}
+p {
+    color: white;
+    text-align: center;
+}
+.grid-container {
+    align-content: center;
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-columns: repeat(4, 20px);
+    gap: 1em;
+  }
+button{
+    align-content: center;
+    width: 300px;
+    height: 200px;
+    color: white;
+    opacity: 0;
+}
+.button1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.button2 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.button3 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+div {
+    text-align: center;
+}

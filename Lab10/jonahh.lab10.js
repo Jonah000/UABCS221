@@ -1,10 +1,9 @@
-const changeText = document.querySelector("#changetext");
 let choice = "";
+let comchoice;
 function Rock(choice) {
     choice = "rock";
     console.log("User chose: " + choice);
     let com = Math.floor(Math.random() * 11);
-let comchoice;
 if(com == 10 || com == 9 || com == 8) {
     comchoice = "rock";
 } else if(com == 7 || com == 6 || com == 5) {
@@ -34,15 +33,11 @@ if(choice == comchoice){
 }
 console.log("Computer chose: " + comchoice);
 console.log("Results: " + winner);
-changeText.addEventListener("click", function() {
-    changeText.textContent = "User chose: ";
-});
 }
 function Paper(choice) {
     choice = "paper";
     console.log("User chose: " + choice);
     let com = Math.floor(Math.random() * 11);
-let comchoice;
 if(com == 10 || com == 9 || com == 8) {
     comchoice = "rock";
 } else if(com == 7 || com == 6 || com == 5) {
@@ -72,15 +67,11 @@ if(choice == comchoice){
 }
 console.log("Computer chose: " + comchoice);
 console.log("Results: " + winner);
-changeText.addEventListener("click", function() {
-    changeText.textContent = "User chose: ";
-});
 }
 function Scissors(choice) {
     choice = "scissors";
     console.log("User chose: " + choice);
     let com = Math.floor(Math.random() * 11);
-let comchoice;
 if(com == 10 || com == 9 || com == 8) {
     comchoice = "rock";
 } else if(com == 7 || com == 6 || com == 5) {
@@ -110,7 +101,10 @@ if(choice == comchoice){
 }
 console.log("Computer chose: " + comchoice);
 console.log("Results: " + winner);
-changeText.addEventListener("click", function() {
-    changeText.textContent = "User chose: ";
-});
+}
+document.getElementById("button1").addEventListener("click", changeText);
+document.getElementById("button2").addEventListener("click", changeText);
+document.getElementById("button3").addEventListener("click", changeText);
+function changeText() {
+document.getElementByID("changetext").innerText = "User chose: " + choice + "Computer chose: " + comchoice + "Results: " + winner;
 }
