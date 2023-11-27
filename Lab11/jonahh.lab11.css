@@ -11,37 +11,41 @@ p {
     text-align: center;
 }
 .grid-container {
-    align-content: center;
     display: grid;
-    grid-template-rows: repeat(3, 30px);
-    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, 200px);
     gap: 1em;
   }
 button{
     align-content: center;
-    width: 300px;
-    height: 200px;
-    color: white;
-    opacity: 0;
+    width: 150px;
+    height: 100px;
 }
 .button1 {
     text-align: center;
-    color: white;
-    background-color: black;
     border-radius: 10px;
+    width: 150px;
+    height: 100px;
 }
 .button2 {
     text-align: center;
-    color: white;
-    background-color: black;
     border-radius: 10px;
+    width: 150px;
+    height: 100px;
 }
 .button3 {
     text-align: center;
-    color: white;
-    background-color: black;
     border-radius: 10px;
+    width: 150px;
+    height: 100px;
 }
 div {
     text-align: center;
+}
+nav{
+    color: grey;
+    font-size: 50px;
+    position: sticky;
+    text-align: center;
+    top: 0px;
 }
