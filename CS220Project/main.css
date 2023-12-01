@@ -1,0 +1,164 @@
+.multiselect {
+    width: 200px;
+}
+  
+.selectBox {
+    position: relative;
+}
+  
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+  
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+  
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+  
+#checkboxes label {
+    display: block;
+}
+  
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+/*  */
+.multiselect2 {
+    width: 200px;
+}
+  
+.selectRadio {
+    position: relative;
+}
+  
+.selectRadio select {
+    width: 100%;
+    font-weight: bold;
+}
+  
+.overSelect2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+  
+#radioButtons {
+    display: none;
+    border: 1px #dadada solid;
+}
+  
+#radioButtons label {
+    display: block;
+}
+  
+#radioButtons label:hover {
+    background-color: #1e90ff;
+}
+
+#ItemsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#ItemsContainer img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#ItemsContainer button{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    display: none;
+}
+#imageGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+button {
+    border: none;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+button img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+body {
+    text-align: center;
+    background-size: fill;
+    background-image: url("https://images.unsplash.com/photo-1641262503099-741a0825b3e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+header {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+main {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+form {
+    text-align: center;
+    color: black;
+}
+footer {
+    font-style: italic;
+    font-size: 10px;
+    color: black;
+}
+.Frame {
+    font-family: impact;
+    border-style: groove;
+    border-color: black;
+    background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+#Dish1 {
+    color: brown;
+}
+#Dish2 {
+    color: brown;
+}
+#Dish3 {
+    color: brown;}
+#Dish4 {
+    color: brown;}
+#Dish5 {
+    color: brown;}
+#Dish6 {
+    color: brown;}
+#Dish7 {
+    color: brown;}
+#Dish8 {
+    color: brown;}
+#Dish9 {
+    color: brown;}
+#Dish10 {
+    color: brown;}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.Text {
+    text-align: center;
+    color: white;
+}

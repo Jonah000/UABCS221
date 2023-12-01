@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(238,174,202);
+    background: linear-gradient(270deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica';
+    color: white;
+    flex-direction: column;
+}
+h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #293935;
+}
+#jokeContainer {
+    display: block;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    color: #222;
+    box-shadow: 1px 1px 4px #a29fb1;
+}
