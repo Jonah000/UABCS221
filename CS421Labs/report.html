@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <nav>
+        <b>
+          <a href="base.html">Home</a>
+          <a href="index.html">Password Form</a>
+        </b>
+      </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation Result</title>
+    <style>
+        .valid {
+            color: green;
+        }
+        .invalid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Password Validation Result</h2>
+    <div id="validationMessage"></div>
+
+    <script>
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+
+        const password = getQueryVariable("password");
+        const validationMessage = document.getElementById('validationMessage');
+
+        if (password) {
+            let message = '';
+            let isValid = true;
+
+            // Check if password has at least 8 characters
+            if (password.length < 8) {
+                message += '<p class="invalid">Password must be at least 8 characters long.</p>';
+                isValid = false;
+            } else {
+                message += '<p class="valid">Password has at least 8 characters.</p>';
+            }
+
+            // Check if password contains an uppercase letter
+            if (!/[A-Z]/.test(password)) {
+                message += '<p class="invalid">Password must contain at least one uppercase letter.</p>';
+                isValid = false;
+            } else {
+                message += '<p class="valid">Password contains an uppercase letter.</p>';
+            }
+
+            // Check if password contains a lowercase letter
+            if (!/[a-z]/.test(password)) {
+                message += '<p class="invalid">Password must contain at least one lowercase letter.</p>';
+                isValid = false;
+            } else {
+                message += '<p class="valid">Password contains a lowercase letter.</p>';
+            }
+
+            // Check if password ends in a number
+            if (!/\d$/.test(password)) {
+                message += '<p class="invalid">Password must end with a number.</p>';
+                isValid = false;
+            } else {
+                message += '<p class="valid">Password ends with a number.</p>';
+            }
+
+            validationMessage.innerHTML = message;
+        } else {
+            validationMessage.innerHTML = '<p class="invalid">No password provided.</p>';
+        }
+    </script>
+</body>
+</html>

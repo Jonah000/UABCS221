@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Unit Converter</h1>
+        <form id="converterForm">
+            <div class="form-group">
+                <label for="inputValue">Input:</label>
+                <input type="number" class="form-control" id="inputValue" required>
+            </div>
+            <div class="form-group">
+                <label for="conversionType">Convert to:</label>
+                <select class="form-control" id="conversionType" required>
+                    <option value="length">Length (meters to feet)</option>
+                    <option value="weight">Weight (kilograms to pounds)</option>
+                    <option value="temperature">Temperature (Celsius to Fahrenheit)</option>
+                    <option value="lengthInvert">Length (feet to meters)</option>
+                    <option value="weightInvert">Weight (pounds to kilograms)</option>
+                    <option value="temperatureInvert">Temperature (Farhenheit to Celsius)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        <div class="mt-4">
+            <h2>Result: <span id="result"></span></h2>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="lab03.js"></script>
+</body>
+</html>

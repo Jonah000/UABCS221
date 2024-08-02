@@ -1,0 +1,41 @@
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+  }
+  body {
+    color: black;
+  }
+  p {
+    color: red;
+  }
+  p1 {
+    color: white;
+    background-color: red;
+  }
+  div {
+    color: black;
+  }
+  table {
+    color: black;
+    border-style: double;
+    text-align: center;
+  }
+  td {
+    color: black;
+    border-style: double;
+  }
+  a:link {
+    color: blue;
+    text-decoration-line: none;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:hover {
+    color: purple;
+  }
+  a:active {
+    color: white;
+  }
+  
