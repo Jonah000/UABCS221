@@ -1,9 +1,11 @@
-from flask import render_template, redirect, url_for, flash, request
+import os
+from flask import abort, render_template, flash, redirect, url_for, request
+from app import db
+from app.forms import SignInForm, SignUpForm
+from app.models import Comment, Like, Post, Profile, User
 from flask_login import current_user, login_user, logout_user, login_required
-from werkzeug.urls import url_parse
-from . import db
-from .models import User, Profile, Follow, Post, Like, Comment
-from .forms import SignUpForm, SignInForm
+from urllib.parse import urlparse as url_parse
+
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -49,7 +51,7 @@ def profile(username):
     if form.validate_on_submit():
         user.profile.bio = form.bio.data
         if form.profile_pic.data:
-            filename = secure_filename(form.profile_pic.data.filename)
+            filename = secure_filename(form.profile_pic.data.filename) # type: ignore
             form.profile_pic.data.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             user.profile.profile_pic = filename
         db.session.commit()
@@ -107,11 +109,11 @@ def post():
         video = request.files.get('video')
         post = Post(body=body, author=current_user)
         if image:
-            image_filename = secure_filename(image.filename)
+            image_filename = secure_filename(image.filename) # type: ignore
             image.save(os.path.join(app.config['UPLOAD_FOLDER'], image_filename))
             post.image = image_filename
         if video:
-            video_filename = secure_filename(video.filename)
+            video_filename = secure_filename(video.filename) # type: ignore
             video.save(os.path.join(app.config['UPLOAD_FOLDER'], video_filename))
             post.video = video_filename
         db.session.add(post)
